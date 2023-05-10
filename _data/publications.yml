@@ -1,0 +1,13 @@
+- id: creps
+  title: "Efficient Scale-Invariant Generator with Column-Row Entangled Pixel Synthesis"
+  venue: CVPR, 2023
+  description: "Given a lot of images of an object category, you can train a NeRF to render them from novel views and interpolate between different instances."
+  project_page: "https://thuanz123.github.io/creps"
+  github: VinAIResearch/CREPS
+  arxiv: 2303.14157
+  image: creps_before.jpg
+  image_mouseover: creps_after.mp4
+  authors:
+    - thuannh
+    - thanhlv
+    - anhtt
