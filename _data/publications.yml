@@ -1,7 +1,7 @@
 - id: anti-dreambooth
   title: "Anti-DreamBooth: Protecting Users from Personalized Text-to-Image Synthesis"
   venue: arxiv, 2023
-  description: "Given a lot of images of an object category, you can train a NeRF to render them from novel views and interpolate between different instances."
+  description: "A security booth safeguards your privacy against malicious threats by preventing DreamBooth from synthesizing photo-realistic images of the individual target."
   project_page: "https://anti-dreambooth.github.io/"
   github: VinAIResearch/Anti-DreamBooth
   arxiv: 2303.15433
@@ -17,7 +17,7 @@
 - id: creps
   title: "Efficient Scale-Invariant Generator with Column-Row Entangled Pixel Synthesis"
   venue: CVPR, 2023
-  description: "Given a lot of images of an object category, you can train a NeRF to render them from novel views and interpolate between different instances."
+  description: "An efficient and geometry-invariant generator for synthesizing high-resolution images without using spatial convolutions or a coarse-to-fine design."
   project_page: "https://thuanz123.github.io/creps/"
   github: VinAIResearch/CREPS
   arxiv: 2303.14157
