@@ -1,6 +1,6 @@
 # thuanz123.github.io
 
-- Borrow from [this template](https://keunhong.com/)
+- Borrow from [this template](https://github.com/keunhong/keunhong.github.io)
 - Feel free to borrow it and make sure to cite the original one.
 - Make sure to update all relevant fields in `_config.yml` and `_data`.
 
