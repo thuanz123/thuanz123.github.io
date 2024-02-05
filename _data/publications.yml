@@ -1,7 +1,7 @@
 - id: swiftbrush
   title: "SwiftBrush: One-Step Text-to-Image Diffusion Model with Variational Score Distillation"
   venue: arXiv, 2023
-  description: "An image-free distillation method that can transform multi-step text-to-image diffusion models into one-step generators."
+  description: "An image-free distillation method that transform multi-step text-to-image diffusion models into one-step generators."
   project_page: "https://thuanz123.github.io/swiftbrush/"
   arxiv: 2312.05239
   image: swiftbrush_before.jpg
