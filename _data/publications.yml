@@ -6,8 +6,9 @@
   arxiv: 2312.05239
   image: swiftbrush_before.jpg
   image_mouseover: swiftbrush_after.mp4
-  authors:
+  first_authors:
     - thuannh
+  authors:
     - anhtt
 - id: anti-dreambooth
   title: "Anti-DreamBooth: Protecting Users from Personalized Text-to-Image Synthesis"
@@ -18,11 +19,12 @@
   arxiv: 2303.15433
   image: anti_dreambooth_before.jpg
   image_mouseover: anti_dreambooth_after.mp4
-  authors:
+  first_authors:
     - thanhlv
     - haopt
     - thuannh
     - quandm
+  authors:
     - ngoctnq
     - anhtt
 - id: creps
@@ -34,7 +36,8 @@
   arxiv: 2303.14157
   image: creps_before.jpg
   image_mouseover: creps_after.mp4
-  authors:
+  first_authors:
     - thuannh
     - thanhlv
+  authors:
     - anhtt
