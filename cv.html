@@ -107,12 +107,22 @@ layout: null
         {% endfor %}
 
         <h2>Publications</h2>
-
+        
         {% for publication in site.data.publications %}
         <div class="columns">
           <div class="column is-four-fifths">
             <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
             <div class="publication-authors">
+              {% for author_id in publication.first_authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% if author.is_me %}
+                {{ author.first_name | slice: 0 }}. {{ author.last_name }}*,
+                {% else %}
+                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}*</a>,
+                {% endif %}
+              </span>
+              {% endfor %}
               {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">

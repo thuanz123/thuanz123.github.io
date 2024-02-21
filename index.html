@@ -105,7 +105,6 @@ layout: null
       </div>
 
       <h2 class="title is-3">Publications</h2>
-
       {% for publication in site.data.publications %}
       <div class="publication-block columns {% if publication.image_mouseover %}publication-mousecell{% endif %}">
 
@@ -125,6 +124,17 @@ layout: null
           <div class="content">
             <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
             <div class="publication-authors">
+              {% for author_id in publication.first_authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% if author.is_me %}
+                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}*,
+                {% else %}
+                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
+                  }}*</a>,
+                {% endif %}
+              </span>
+              {% endfor %}
               {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">
@@ -193,7 +203,7 @@ layout: null
         <div class="column is-8">
           <div class="content">
             <p>
-              Borrow from <a href="https://github.com/keunhong/keunhong.github.io">Keunhong's template</a>. Feel free to use it and remember to cite the original as well as mine.
+            Borrow from <a href="https://github.com/keunhong/keunhong.github.io">Keunhong's template</a>. Feel free to use it but remember to cite the original and mine.
             </p>
           </div>
         </div>
