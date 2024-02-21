@@ -121,7 +121,7 @@ layout: null
                 endif %}
                 {% else %}
                 <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}*</a>{% if
-                forloop.last == false %},{% endif %}
+                forloop.last == True %},{% endif %}
                 {% endif %}
               </span>
               {% endfor %}
