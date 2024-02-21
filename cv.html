@@ -120,8 +120,7 @@ layout: null
                 {{ author.first_name | slice: 0 }}. {{ author.last_name }}*{% if forloop.last == false %},{%
                 endif %}
                 {% else %}
-                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}*</a>{% if
-                forloop.last == True %},{% endif %}
+                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}*</a>,
                 {% endif %}
               </span>
               {% endfor %}
