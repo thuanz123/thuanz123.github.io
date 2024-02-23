@@ -6,9 +6,8 @@
   arxiv: 2312.05239
   image: swiftbrush_before.jpg
   image_mouseover: swiftbrush_after.mp4
-  first_authors:
-    - thuannh
   authors:
+    - thuannh
     - anhtt
 - id: anti-dreambooth
   title: "Anti-DreamBooth: Protecting Users from Personalized Text-to-Image Synthesis"
