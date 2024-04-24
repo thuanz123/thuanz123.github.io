@@ -12,7 +12,7 @@
 - id: anti-dreambooth
   title: "Anti-DreamBooth: Protecting Users from Personalized Text-to-Image Synthesis"
   venue: ICCV, 2023
-  description: "A security booth safeguards your privacy against malicious threats by preventing DreamBooth from synthesizing photo-realistic images of you."
+  description: "A security booth safeguards your privacy against malicious threats of DreamBooth by preventing it from synthesizing photo-realistic images of you."
   project_page: "https://anti-dreambooth.github.io/"
   github: VinAIResearch/Anti-DreamBooth
   arxiv: 2303.15433
