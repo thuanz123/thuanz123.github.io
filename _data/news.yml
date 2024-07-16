@@ -1,4 +1,12 @@
+- date: Jul 2024
+  description: >-
+    [_SwiftBrush v2_](https://swiftbrushv2.github.io/) has been accepted to ECCV 2024.
+
 - date: Jun 2024
+  description: >-
+    We have released the [code](https://github.com/VinAIResearch/SwiftBrush) for [_SwiftBrush_](https://thuanz123.github.io/swiftbrush).
+
+- date: Mar 2024
   description: >-
     [_SwiftBrush_](https://thuanz123.github.io/swiftbrush) has been accepted to CVPR 2024. We 
     have also released the [code](https://github.com/VinAIResearch/SwiftBrush).
