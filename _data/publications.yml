@@ -4,13 +4,21 @@
   description: "Improved SwiftBrush that makes the one-step diffusion student beat its multi-step teacher."
   project_page: "https://swiftbrushv2.github.io/"
   authors:
-    - trungdt
-    - thuannh
-    - ducvh
-    - thanhlv
-    - khoindm
-    - cuongpv
-    - anhtt
+    - author_id: "trungdt"
+      sign: ""
+    - author_id: "thuannh"
+      sign: "*"
+    - author_id: "thanhlv"
+      sign: "*"
+    - author_id: "ducvh"
+      sign: "*"
+    - thuannh: "*"
+    - author_id: "khoindm"
+      sign: ""
+    - author_id: "cuongpv"
+      sign: ""
+    - author_id: "anhtt"
+      sign: ""
 - id: swiftbrush
   title: "SwiftBrush: One-Step Text-to-Image Diffusion Model with Variational Score Distillation"
   venue: CVPR, 2024
@@ -21,8 +29,10 @@
   image: swiftbrush_before.jpg
   image_mouseover: swiftbrush_after.mp4
   authors:
-    - thuannh
-    - anhtt
+    - author_id: "thuannh"
+      sign: ""
+    - author_id: "anhtt"
+      sign: ""
 - id: anti-dreambooth
   title: "Anti-DreamBooth: Protecting Users from Personalized Text-to-Image Synthesis"
   venue: ICCV, 2023
@@ -32,14 +42,19 @@
   arxiv: 2303.15433
   image: anti_dreambooth_before.jpg
   image_mouseover: anti_dreambooth_after.mp4
-  first_authors:
-    - thanhlv
-    - haopt
-    - thuannh
-    - quandm
   authors:
-    - ngoctnq
-    - anhtt
+    - author_id: "thanhlv"
+      sign: "*"
+    - author_id: "haopt"
+      sign: "*"
+    - author_id: "thuannh"
+      sign: "*"
+    - author_id: "quandm"
+      sign: "*"
+    - author_id: "ngoctnq"
+      sign: "*"
+    - author_id: "anhtt"
+      sign: ""
 - id: creps
   title: "Efficient Scale-Invariant Generator with Column-Row Entangled Pixel Synthesis"
   venue: CVPR, 2023
@@ -49,8 +64,10 @@
   arxiv: 2303.14157
   image: creps_before.jpg
   image_mouseover: creps_after.mp4
-  first_authors:
-    - thuannh
-    - thanhlv
   authors:
-    - anhtt
+    - author_id: "thuannh"
+      sign: "*"
+    - author_id: "thanhlv"
+      sign: "*"
+    - author_id: "anhtt"
+      sign: ""
