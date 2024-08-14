@@ -1,4 +1,11 @@
-- name: Ho Chi Minh University of Technology
+- name: Mohamed bin Zayed University of Artificial Intelligence
+  description: >-
+    PhD in Computer Vision, advised by <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Prof. Hao Li</a>.
+  dates: Fall 2024 - Present
+  location: Abu Dhabi, UAE
+
+
+- name: Vietnam National University - Ho Chi Minh University of Technology
   description: >-
     B.Eng. in Computer Science, advised by <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ">Prof. Duc Dung Nguyen</a>.
   dates: Fall 2017 - Spring 2021
