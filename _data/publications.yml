@@ -1,7 +1,7 @@
 - id: swiftbrushv2
   title: "SwiftBrush v2: Make Your One-step Diffusion Model Better Than Its Teacher"
   venue: ECCV, 2024
-  description: "Improved SwiftBrush that makes the one-step diffusion student beat its multi-step teacher."
+  description: "An improved SwiftBrush that makes the one-step diffusion student beat its multi-step teacher."
   project_page: "https://swiftbrushv2.github.io/"
   image: swiftbrushv2_before.jpg
   image_mouseover: swiftbrushv2_after.mp4
@@ -23,7 +23,7 @@
 - id: swiftbrush
   title: "SwiftBrush: One-Step Text-to-Image Diffusion Model with Variational Score Distillation"
   venue: CVPR, 2024
-  description: "An image-free distillation method that transform multi-step text-to-image diffusion models into one-step generators."
+  description: "An image-free distillation method that transforms multi-step text-to-image diffusion models into one-step generators."
   project_page: "https://thuanz123.github.io/swiftbrush/"
   github: VinAIResearch/SwiftBrush
   arxiv: 2312.05239
