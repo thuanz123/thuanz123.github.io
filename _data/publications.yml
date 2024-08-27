@@ -3,6 +3,7 @@
   venue: ECCV, 2024
   description: "An improved SwiftBrush that makes the one-step diffusion student beat its multi-step teacher."
   project_page: "https://swiftbrushv2.github.io/"
+  arxiv: 2408.14176
   image: swiftbrushv2_before.jpg
   image_mouseover: swiftbrushv2_after.mp4
   authors:
