@@ -1,3 +1,22 @@
+- id: liftrefine
+  title: "LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations"
+  venue: arXiv, 2024
+  description: "An hybrid 3d representation of volume and triplane for efficient novel-view synthesis from limited inputs."
+  project_page: "https://arxiv.org/abs/2412.14464"
+  arxiv: 2408.14176
+  image: liftrefine_before.jpg
+  image_mouseover: liftrefine_after.mp4
+  authors:
+    - author_id: "tungdt"
+      sign: ""
+    - author_id: "thuannh"
+      sign: ""
+    - author_id: "anhtt"
+      sign: ""
+    - author_id: "rangnhm"
+      sign: ""
+    - author_id: "sonhb"
+      sign: ""
 - id: swiftbrushv2
   title: "SwiftBrush v2: Make Your One-step Diffusion Model Better Than Its Teacher"
   venue: ECCV, 2024
