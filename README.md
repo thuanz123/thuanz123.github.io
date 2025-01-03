@@ -1,7 +1,7 @@
 # thuanz123.github.io
 
 - Borrow from [this template](https://github.com/keunhong/keunhong.github.io)
-- Feel free to borrow it and make sure to cite both this and the original one.
+- Feel free to borrow it and make sure to cite both this as well as the original one.
 - Make sure to update all relevant fields in `_config.yml`, `_data` and `images`.
 
 # License
