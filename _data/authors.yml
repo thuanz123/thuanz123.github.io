@@ -8,7 +8,7 @@ thanhlv:
   first_name: Thanh
   middle_name: Van
   last_name: Le
-  website: https://github.com/Luvata/
+  website: https://luvata.github.io/
 anhtt:
   first_name: Anh
   last_name: Tran
@@ -28,7 +28,7 @@ ngoctnq:
 trungdt:
   first_name: Trung
   last_name: Dao
-  website: https://termanteus.com/
+  website: https://bomcon123456.github.io/
 ducvh:
   first_name: Duc
   last_name: Vu
@@ -41,6 +41,10 @@ cuongpv:
   first_name: Cuong
   last_name: Pham
   website: https://sites.google.com/view/cuongpham/home
+tungdt:
+  first_name: Tung
+  last_name: Do
+  website: https://itsthanhtung.github.io/
 rangnhm:
   first_name: Rang
   last_name: Nguyen
