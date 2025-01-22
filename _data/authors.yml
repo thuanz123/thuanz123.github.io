@@ -1,55 +1,51 @@
-thuannh:
-  first_name: Thuan
-  middle_name: Hoang	
-  last_name: Nguyen
-  website: https://thuanz123.github.io/
-  is_me: true
-thanhlv:
-  first_name: Thanh
-  middle_name: Van
-  last_name: Le
-  website: https://luvata.github.io/
-anhtt:
-  first_name: Anh
-  last_name: Tran
-  website: https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl/
-haopt:
-  first_name: Hao
-  last_name: Phung
-  website: https://hao-pt.github.io/
-quandm:
-  first_name: Quan
-  last_name: Dao
-  website: https://quandao10.github.io/
-ngoctnq:
-  first_name: Ngoc
-  last_name: Tran
-  website: https://ngoctnq.github.io/
-trungdt:
-  first_name: Trung
-  last_name: Dao
-  website: https://bomcon123456.github.io/
-ducvh:
-  first_name: Duc
-  last_name: Vu
-  website: https://scholar.google.com/citations?user=mUHCYJsAAAAJ
-khoindm:
-  first_name: Khoi
-  last_name: Nguyen
-  website: https://www.khoinguyen.org/
-cuongpv:
-  first_name: Cuong
-  last_name: Pham
-  website: https://sites.google.com/view/cuongpham/home
-tungdt:
-  first_name: Tung
-  last_name: Do
-  website: https://itsthanhtung.github.io/
-rangnhm:
-  first_name: Rang
-  last_name: Nguyen
-  website: https://rangnguyen.github.io/
-sonhb:
-  first_name: Binh-Son
-  last_name: Hua
-  website: https://sonhua.github.io/
+"thuannh":
+  name: Thuan Hoang Nguyen
+  bold: true
+
+"thanhlv":
+  name: Thanh Le
+  url: https://luvata.github.io/
+
+"anhtt":
+  name: Anh Tran
+  url: https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl/
+
+"haopt":
+  name: Hao Phung
+  url: https://hao-pt.github.io/
+
+"quandm":
+  name: Quan Dao
+  url: https://quandao10.github.io/
+
+"ngoctnq":
+  name: Ngoc Tran
+  url: https://ngoctnq.github.io/
+
+"trungdt":
+  name: Trung Dao
+  url: https://bomcon123456.github.io/
+ 
+"ducvh":
+  name: Duc Vu
+  url: https://scholar.google.com/citations?user=mUHCYJsAAAAJ
+
+"khoindm":
+  name: Khoi nguyen
+  url: https://www.khoinguyen.org/
+
+"cuongpv":
+  name: Cuong Pham
+  url: https://sites.google.com/view/cuongpham/home
+
+"tungdt":
+  name: Tung Do
+  url: https://itsthanhtung.github.io/
+
+"rangnhm":
+  name: Rang Nguyen
+  url: https://rangnguyen.github.io/
+
+"sonhb":
+  name: Binh-Son Hua
+  url: https://sonhua.github.io/
