@@ -1,0 +1,134 @@
+@charset "utf-8";
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding-top: 5.0rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+.text-profile-position {
+    font-weight: 400;
+}
+
+.text-profile-bio {
+    /* font-family: "Raleway"; */
+    font-weight: 400;
+}
+
+.navbar {
+    opacity: 0.95;
+}
+
+.inline-badge {
+    height: 16px;
+    vertical-align: -10%;
+    margin-right: 2px;
+    line-break: unset;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.cover-image {
+    width: 180px;
+    max-height: 120px;
+}
+
+.abstract-body {
+    min-height: 100px;
+}
+
+img.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+div.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+.badge-publication {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: Courier, monospace;
+}
+
+@keyframes changeLetter {
+  0% {content: "";}
+  2% {content: "g";}
+  4% {content: "gy";}
+  6% {content: "gym";}
+  8% {content: "gymm";}
+  10% {content: "gymme";}
+  12% {content: "gymmer.";}
+  14% {content: "gymmer.";}
+  16% {content: "gymmer";}
+  18% {content: "gymme";}      
+  20% {content: "gymm";}
+  22% {content: "gym";}
+  24% {content: "gy";}
+  26% {content: "g";}
+  28% {content: "ga";}
+  30% {content: "gam";}
+  34% {content: "game";}
+  36% {content: "gamer";}
+  38% {content: "gamer.";}
+  40% {content: "gamer.";}
+  42% {content: "gamer";}
+  44% {content: "game";}
+  46% {content: "gam";}
+  48% {content: "gam";}
+  50% {content: "ga";}
+  52% {content: "g";}
+  54% {content: "";}
+  56% {content: "m";}
+  58% {content: "ma";}
+  60% {content: "man";}
+  62% {content: "mang";}
+  64% {content: "manga";}
+  66% {content: "manga ";}
+  68% {content: "manga n";}
+  70% {content: "manga ne";}
+  72% {content: "manga ner";}
+  74% {content: "manga nerd";}
+  78% {content: "manga nerd.";}
+  80% {content: "manga nerd.";}
+  82% {content: "manga nerd";}
+  84% {content: "manga ner";}
+  86% {content: "manga ne";}
+  88% {content: "manga n";}
+  90% {content: "manga ";}
+  92% {content: "manga";}
+  94% {content: "mang";}
+  96% {content: "man";}
+  98% {content: "ma";}
+  100% {content: "m";}
+}
+
+@keyframes cursor {
+  0% {content: "";}
+  50% {content: "_";}
+  100% {content: "";}
+}
+.letter-changer::before {
+  animation: changeLetter 6s linear 1s infinite normal forwards;
+  content: "";
+}
+.letter-changer::after {
+  animation: cursor 0.6s linear 2.2s 1 infinite normal forwards, cursor 0.6s linear 4s 3 infinite normal forwards;
+  content: "_";
+}
