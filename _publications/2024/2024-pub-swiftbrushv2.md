@@ -17,4 +17,5 @@ authors:
 links:
   Project Page: https://swiftbrushv2.github.io/
   Paper: https://arxiv.org/abs/2408.14176
+  Code: https://github.com/VinAIResearch/SwiftBrushv2
 ---
