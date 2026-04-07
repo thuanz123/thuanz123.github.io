@@ -12,6 +12,7 @@ authors:
   - haopt*
   - thuannh*
   - quandm*
+  - ngoctnq
   - anhtt
 links:
   Project Page: https://vinairesearch.github.io/Anti-DreamBooth/
