@@ -4,7 +4,18 @@
             <div class="card-body p-5">
                 <div class="row">
                     <div class="col">
-                        {% if site.data.profile.portrait_url %}
+                        {% if site.data.profile.portrait_url and site.data.profile.portrait_3d %}
+                        <!-- Interactive 3D portrait (assets/js/avatar3d.js). The image is a still render of it, shown
+                             until it starts and kept as the fallback without WebGL. -->
+                        <div class="figure float-right ml-4 mb-4 d-none d-md-block">
+                            <div class="avatar3d avatar3d-bust" data-avatar3d="bust">
+                                <img src="{{ '/assets/images/photos/avatar-bust.jpg' | relative_url }}" alt="Portrait">
+                            </div>
+                            <figcaption class="figure-caption text-center mt-1 avatar3d-hint" aria-hidden="true">
+                                <i class="fas fa-hand-pointer"></i> poke my face
+                            </figcaption>
+                        </div>
+                        {% elsif site.data.profile.portrait_url %}
                         <!-- When the screen is wider than md, float the portrait on the right -->
                         <div class="figure float-right ml-4 mb-4 d-none d-md-block">
                             <img 
@@ -21,7 +32,13 @@
                             <div class="h1 font-weight-normal">
                                 {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
                             </div>
-                            {% if site.data.profile.portrait_url %}
+                            {% if site.data.profile.portrait_url and site.data.profile.portrait_3d %}
+                            <div class="ml-auto d-md-none">
+                                <div class="avatar3d avatar3d-head" data-avatar3d="head">
+                                    <img src="{{ '/assets/images/photos/avatar-head.jpg' | relative_url }}" alt="Portrait">
+                                </div>
+                            </div>
+                            {% elsif site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
                                 <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
                                     <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="height: 70px; margin-top: 15px; margin-right: -20px; border: 1px solid grey; " alt="Portrait">
@@ -104,6 +121,10 @@
         </div>        
     </div>
 </div>
+
+{% if site.data.profile.portrait_url and site.data.profile.portrait_3d %}
+<script type="module" src="{{ '/assets/js/avatar3d.js' | relative_url }}"></script>
+{% endif %}
 
 {% if site.data.profile.wechat_qrcode %}
 <div class="modal fade" id="modal-wechat" tabindex="-1" aria-hidden="true">

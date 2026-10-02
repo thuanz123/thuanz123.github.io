@@ -132,3 +132,64 @@ div.lazy {
   animation: cursor 0.6s linear 2.2s 1 infinite normal forwards, cursor 0.6s linear 4s 3 infinite normal forwards;
   content: "_";
 }
+
+/* Interactive 3D portrait (assets/js/avatar3d.js). The <img> is a still render of it: it shows
+   until the canvas has rendered and faded in on top, and stays as the fallback without WebGL. */
+.avatar3d {
+    position: relative;
+    overflow: hidden;
+}
+.avatar3d > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avatar3d canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+.avatar3d canvas:focus-visible {
+    outline: 2px solid rgba(0, 123, 255, 0.5);
+    outline-offset: -2px;
+}
+.avatar3d.avatar3d-ready canvas {
+    opacity: 1;
+}
+.avatar3d.avatar3d-ready > img {
+    visibility: hidden;
+    transition: visibility 0s linear 0.4s;   /* once the canvas has faded in */
+}
+.avatar3d-bust {
+    width: 210px;
+    height: 240px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background: radial-gradient(circle at 84% 34%, #b8743e 0%, #3a3f5c 30%, #222838 100%);
+}
+.avatar3d-head {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-right: -20px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background: #f8f9fa;
+}
+.avatar3d-hint {
+    transition: opacity 0.6s ease;
+}
+.avatar3d:not(.avatar3d-ready) + .avatar3d-hint {
+    visibility: hidden;
+}
+.avatar3d-hint-done {
+    opacity: 0;
+}
