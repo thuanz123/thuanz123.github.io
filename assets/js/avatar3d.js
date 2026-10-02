@@ -278,6 +278,15 @@ function faceZ(x, y) {
     return eyeSocket(x, y, baseFrontZ(x, y) + faceRelief(x, y));
 }
 
+// Slims the cheeks and jaw: the sides of the lower face move in, while the middle of the face (eyes,
+// nose, mouth) stays put and the chin is left alone. Everything is modeled and textured at the
+// unslimmed position, so the portrait gets squeezed along with the shape.
+const CHEEK_SLIM = 0.035;
+function slimOffset(x, y) {
+    const band = smoothstep(0.1, -0.3, y) * smoothstep(-1.45, -1.0, y);
+    return -Math.sign(x) * CHEEK_SLIM * band * smoothstep(0.3, 0.95, Math.abs(x));
+}
+
 // ---------------------------------------------------------------------------------------------
 // Expressions sculpted into the head as morph targets. Each is a displacement of the rest shape;
 // the mouth opens along a seam on the lip line, where the lip vertices are duplicated.
@@ -433,8 +442,9 @@ function buildHeadGeometry(detailed) {
         }
     }
 
+    const shown = verts.map((v) => v.p.clone().setX(v.p.x + slimOffset(v.p.x, v.p.y)));
     const g = new THREE.BufferGeometry();
-    g.setAttribute('position', new THREE.Float32BufferAttribute(verts.flatMap((v) => [v.p.x, v.p.y, v.p.z]), 3));
+    g.setAttribute('position', new THREE.Float32BufferAttribute(shown.flatMap((p) => [p.x, p.y, p.z]), 3));
     g.setIndex(indices);
     g.computeVertexNormals();
     if (!detailed) return g;
@@ -447,7 +457,7 @@ function buildHeadGeometry(detailed) {
     }
     g.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
     g.setAttribute('blush', new THREE.Float32BufferAttribute(blush, 1));
-    setPortraitAttribute(g, g.attributes.position.array, g.attributes.normal.array);
+    setPortraitAttribute(g, new Float32Array(verts.flatMap((v) => [v.p.x, v.p.y, v.p.z])), g.attributes.normal.array);
 
     const baseNormals = g.attributes.normal.array;
     const work = new THREE.BufferGeometry();
@@ -458,11 +468,11 @@ function buildHeadGeometry(detailed) {
     g.morphAttributes.normal = [];
     for (const name of HEAD_MORPHS) {
         const delta = [], moved = [];
-        for (const v of verts) {
+        verts.forEach((v, k) => {
             expressionOffset(name, v.p, v.lowerLip, off);
             delta.push(off.x, off.y, off.z);
-            moved.push(v.p.x + off.x, v.p.y + off.y, v.p.z + off.z);
-        }
+            moved.push(shown[k].x + off.x, shown[k].y + off.y, shown[k].z + off.z);
+        });
         work.setAttribute('position', new THREE.Float32BufferAttribute(moved, 3));
         work.computeVertexNormals();
         const n = work.attributes.normal.array, dn = new Float32Array(n.length);
@@ -1315,6 +1325,8 @@ async function init(mounts) {
         projectPortrait(ears[1], 1);   // the ear the portrait shows edge-on wears its mirror image
         [ears[0], shell, strands, ...eyes.flatMap((e) => [e.upper, e.lower]), ...body.group.children].forEach((m) => projectPortrait(m));
     }
+    // The ears follow the slimmed cheeks in (after taking their texture from where they were).
+    for (const ear of ears) ear.position.x += slimOffset(ear.position.x, ear.position.y);
 
     // Clicks are resolved against cheap, static stand-ins rather than the morphing meshes.
     const proxy = (geometry, region, parent) => {
