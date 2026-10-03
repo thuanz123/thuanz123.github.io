@@ -11,5 +11,6 @@ authors:
   - thuannh
   - haoli
 links:
+  Project Page: https://sphere-latent-encoder.github.io/
   Paper: https://arxiv.org/abs/2605.15592
 ---
