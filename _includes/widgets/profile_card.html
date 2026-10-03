@@ -123,6 +123,10 @@
 </div>
 
 {% if site.data.profile.portrait_url and site.data.profile.portrait_3d %}
+<!-- SRI for the three.js module imported by avatar3d.js; keep in sync with its import URL. -->
+<script type="importmap">
+{ "integrity": { "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js": "sha384-m8JoFX52V6NGv2usipnlLJKnJfL7IE8dbniPDDCSGSQv3Hm4n6PjfV6syVwfuoRc" } }
+</script>
 <script type="module" src="{{ '/assets/js/avatar3d.js' | relative_url }}"></script>
 {% endif %}
 
